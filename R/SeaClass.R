@@ -1753,7 +1753,7 @@ SeaClass = function(){
                                     tool2=input$tool2)
                    ,con = file)
       },
-      contentType = "text/csv"
+      contentType = NA
     )
 
   # End program

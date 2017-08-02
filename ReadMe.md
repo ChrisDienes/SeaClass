@@ -68,18 +68,18 @@ accuracy_threshold(x=x, group=group, pos_class=0)
 ### Bagged Example ###
 set.seed(123)
 replicate_function = function(index){accuracy_threshold(x=x[index], group=group[index], pos_class=2)[[2]]}
-sample_cuts = replicate(100, {
+sample_cuts <- replicate(100, {
   sample_index = sample.int(n=length(x),replace=TRUE)
   replicate_function(index=sample_index)
 })
-bagged_scores = sapply(x, function(x) mean(x > sample_cuts))
-unbagged_cut    = accuracy_threshold(x=x, group=group, pos_class=2)[[2]]
-unbagged_scores = ifelse(x > unbagged_cut, 1, 0)
+bagged_scores <- sapply(x, function(x) mean(x > sample_cuts))
+unbagged_cut    <- accuracy_threshold(x=x, group=group, pos_class=2)[[2]]
+unbagged_scores <- ifelse(x > unbagged_cut, 1, 0)
 # Compare AUC:
 PRROC::roc.curve(scores.class0 = bagged_scores,weights.class0 = ifelse(group==2,1,0))[[2]]
 PRROC::roc.curve(scores.class0 = unbagged_scores,weights.class0 = ifelse(group==2,1,0))[[2]]
-bagged_prediction = ifelse(bagged_scores > 0.50, 2, 0)
-unbagged_prediction = ifelse(x > unbagged_cut, 2, 0)
+bagged_prediction <- ifelse(bagged_scores > 0.50, 2, 0)
+unbagged_prediction <- ifelse(x > unbagged_cut, 2, 0)
 # Compare Confusion Matrix:
 table(bagged_prediction, group)
 table(unbagged_prediction, group)
