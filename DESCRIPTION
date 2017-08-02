@@ -1,0 +1,11 @@
+Package: SeaClass
+Title: Interactive GUI for analyzing a binary response variable 
+Version: 1.0.0
+Authors@R: person("Christopher", "Dienes", email = "christopher.dienes@seagate.com", role = c("aut", "cre"))
+Description: This package contains a graphical user interface and supporting functions for performing binary response variable analysis. The user can interactively perform their analysis through the SeaClass application, and they have the option to download the underlying R code for any analysis they want to explore further. The package is intended to be both a learning tool and a jump start to actual real world explorations. Further detailed instructions are provided within the application on the info tab.
+Depends: R (>= 3.3.0)
+License: TBD
+Encoding: UTF-8
+LazyData: true
+RoxygenNote: 6.0.1
+Imports: shiny (>= 0.13), shinyjs, V8, rstudioapi (>= 0.5), class, DMwR, DT, e1071, ggplot2, glmnet, htmltools, MASS, PRROC, randomForest, robustbase, rpart, xgboost, Zelig (>= 5.1-2)
