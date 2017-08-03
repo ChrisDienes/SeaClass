@@ -10,7 +10,7 @@ The SeaClass R package provides tools for analyzing classification problems. In 
 The SeaClass application depends on numerous R packages. To install SeaClass and its dependencies run:
 ```r
 install.packages('devtools')
-devtools::install_github('TheLondonPeacock/SeaClass')
+devtools::install_github('ChrisDienes/SeaClass')
 ```
 
 ### Usage Instructions
