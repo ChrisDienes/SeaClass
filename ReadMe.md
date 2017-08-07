@@ -5,6 +5,7 @@ The SeaClass R Package
 The Advanced Analytics group at Seagate Technology has decided to share an internal project which helps accelerate development for classification problems. The interactive SeaClass tool is contained in an R based package built using R Shiny and other CRAN packages commonly used for binary classification. The package is free to use and develop further, but any analysis mistakes are the sole responsibility of the user.
 
 The SeaClass R package provides tools for analyzing classification problems. In particular, specialized tools are available for addressing the problem of imbalanced data sets. The SeaClass application provides an easy to use interface which requires only minimal R programming knowledge to get started, and can be launched using the RStudio Addins menu. The application allows the user to explore numerous methods by simply clicking on the available options and interacting with the generated results. The user can choose to download the codes for any procedures they wish to explore further. SeaClass was designed to jump start the analysis process for both novice and advanced R users. See screenshots below for one demonstration.
+
 ![Screenshots](https://github.com/ChrisDienes/SeaClass/blob/master/screen_shots.png)
 
 ### Install Instructions
