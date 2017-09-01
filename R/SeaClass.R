@@ -92,7 +92,7 @@ SeaClass = function(){
         HTML("<p style=\"font-size:18px;margin-left:35px;margin-top:10px;margin-right:35px;\"><strong>Step 5:</strong> Results will appear below once the analysis is complete. Some methods provide further input options for interactive results.</p>"),
         HTML("<p style=\"font-size:18px;margin-left:35px;margin-top:10px;margin-right:35px;\"><strong>Step 6:</strong> R code based on the most recent analysis and user selections can be downloaded using the tool which will appear at the end of the page.</p>"),
         HTML('<p style=\"font-size:18px;margin:20px;\">This application was built by the advanced analytics group at Seagate.</p>'),
-        HTML('<p style=\"font-size:18px;margin:20px;\">The public github repository is github.com/TheLondonPeacock/SeaClass.</p>')
+        HTML('<p style=\"font-size:18px;margin:20px;\">The public github repository is github.com/ChrisDienes/SeaClass.</p>')
     )),
         style = "padding-top:40px;"
     ),
